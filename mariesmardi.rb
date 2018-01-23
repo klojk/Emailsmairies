@@ -76,7 +76,7 @@ end
 #méthode d'envoi d 'email avec le nom de la mairie en arguments
 def send_email(destinataire, nom)
 	#connection à gmail et je cache mon mot de passe
-	gmail = Gmail.connect("chloe.jungkuss@gmail.com","stitch838")
+	gmail = Gmail.connect("chloe.jungkuss@gmail.com","*****")
 	#fonction envoyer un mail chaque valeur de la colonne 2 (ws[i,2]dans la spreadsheet ira en destinataire)
 	gmail.deliver do to destinataire
 		subject "Bonjour mairie de #{nom}!"
