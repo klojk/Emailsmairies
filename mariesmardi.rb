@@ -13,7 +13,7 @@ session = GoogleDrive::Session.from_config("config.json")
 # First worksheet of
 # https://docs.google.com/spreadsheet/ccc?key=pz7XtlQC-PYx-jrVMJErTcg
 # Or https://docs.google.com/a/someone.com/spreadsheets/d/pz7XtlQC-PYx-jrVMJErTcg/edit?usp=drive_web
-ws = session.spreadsheet_by_key("1Fi5oyJ3BKllPhuZBRjQTS7ZbeMoklXhMxE572cY59E8").worksheets[0]
+ws = session.spreadsheet_by_key("*********************").worksheets[0]
 
 # require 'pry'
 
@@ -62,7 +62,7 @@ def data_spreadsheet
 	#appel des tokens avec le fichier j.Son
 session = GoogleDrive::Session.from_config("config.json")
 #appel de la worksheet de sa feuille [0] dans la variable ws
-ws = session.spreadsheet_by_key("1Fi5oyJ3BKllPhuZBRjQTS7ZbeMoklXhMxE572cY59E8").worksheets[0]
+ws = session.spreadsheet_by_key("***********").worksheets[0]
 #formation d'une boucle avec condition while, qui continuera jusqu'à ce que ce que la colonne 2 soit vide et fausse
 	i = 1
 	while ws[i,2].empty? == false
